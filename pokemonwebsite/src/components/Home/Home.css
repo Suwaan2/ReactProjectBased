@@ -1,0 +1,10 @@
+.homeSection{
+    height:90vh;
+    display: flex;
+    background-image: url('./pokeBack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-height:500px;
+   background-position: top;
+    
+}

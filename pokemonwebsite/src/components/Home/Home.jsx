@@ -1,8 +1,8 @@
-
+import './Home.css'
 
 function Home() {
   return (
-    <div>
+    <div className='homeSection'>
         
 <form className="flex items-center max-w-sm mx-auto">   
     <label htmlFor="simple-search" className="sr-only">Search</label>
