@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { TodoProvider } from "./contexts";
+
 import "./App.css";
-import TodoForm from "./component/TodoForm";
-import TodoItem from "./component/TodoItem";
+import { TodoForm, TodoItem } from "./components";
+import { TodoProvider } from "./context/todoContext";
+
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -46,7 +47,7 @@ function App() {
 
   return (
     <TodoProvider
-      value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
+    value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}  
     >
       <div className="bg-[#172842] min-h-screen py-8">
         <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
@@ -61,7 +62,7 @@ function App() {
             {/*Loop and Add TodoItem here */}
             {todos.map((todo) => (
               <div key={todo.id} className="w-full">
-                <TodoItem todo={todo} />
+                <TodoItem todo={todo}/>
               </div>
             ))}
           </div>
