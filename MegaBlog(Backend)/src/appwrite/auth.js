@@ -59,4 +59,4 @@ const authService = new AuthService();
 
 export default AuthService;
 
-authService
+
