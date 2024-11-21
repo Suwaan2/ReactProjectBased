@@ -40,7 +40,7 @@ export class AuthService {
         try {
            return await this.account.get()
         } catch (error) {
-            console.log("Service Error: Current User")
+            console.log("Service Error: Current User", error)
         }
 
         return null;
@@ -50,13 +50,13 @@ export class AuthService {
         try {
             await this.account.deleteSessions();
         } catch (error) {
-            console.log("Error in logout")
+            console.log("Error in logout", error)
         }
     }
 }
 
 const authService = new AuthService();
 
-export default AuthService;
+export default authService;
 
 
