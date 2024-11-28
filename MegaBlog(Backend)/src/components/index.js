@@ -15,4 +15,19 @@ import AuthLayout from './AuthLayout'
 
 
 
-export {Header, Footer, Container, Logo, LogoutBtn, Button, Input, RTE, Select, Signup, Login, PostForm, PostCard, AuthLayout}
+export {
+    Header,
+    Footer,
+    Container,
+    Logo,
+    LogoutBtn,
+    Button,
+    Input,
+    RTE,
+    Select,
+    Signup,
+    Login,
+    PostForm,
+    PostCard,
+    AuthLayout
+}
