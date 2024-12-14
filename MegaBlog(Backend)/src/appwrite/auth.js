@@ -1,4 +1,5 @@
-import conf from "../conf/conf";
+/* eslint-disable no-useless-catch */
+import conf from "../conf/conf.js";
 import { Client, Account, ID } from "appwrite";
 
 export class AuthService {
@@ -30,9 +31,9 @@ export class AuthService {
 
     async login({email, password}){
         try {
-            await this.account.createEmailPasswordSession(email, password)
+            await this.account.createEmailSession(email, password)
         } catch (error) {
-            throw error
+            throw error;
         }
     }
 
